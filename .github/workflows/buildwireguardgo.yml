@@ -138,7 +138,7 @@ jobs:
            echo "wireguard-go git sha:$(cd wireguard-go && git rev-parse HEAD)" >> release.txt
            echo "源码地址:https://git.zx2c4.com/wireguard-go/tree/$(cd wireguard-go && git rev-parse HEAD)" >> release.txt
            echo "::set-output name=status::success"
-       - name: Upload Gost To Release
+       - name: Upload WireguardGo To Release
          uses: softprops/action-gh-release@v1
          if: steps.tag.outputs.status == 'success' && !cancelled()
          env:
