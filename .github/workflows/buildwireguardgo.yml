@@ -43,7 +43,7 @@ jobs:
               export GOPATH=$CIHOME/golang
               export PATH=$GOROOT/bin:$PATH
               mkdir -p $CIHOME/buildwireguardgoout
-              git clone --depth=1 -b master https://git.zx2c4.com/wireguard-go.git $CIHOME/wireguard-go/
+              git clone --depth=1 -b 0.0.20201118 https://git.zx2c4.com/wireguard-go.git $CIHOME/wireguard-go/
               cd $CIHOME/wireguard-go
               go env -w GO111MODULE=on
               go env -w GOPROXY=https://proxy.golang.org,direct
